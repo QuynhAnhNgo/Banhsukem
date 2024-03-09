@@ -1,0 +1,309 @@
+@charset "utf-8";
+/* CSS Document -- mobie first---*/
+@import url("../fonts/stylesheet.css");
+*{ scroll-behavior: smooth}
+
+.menu
+{
+	font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+h1,h2{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h3,h4,h5{
+	font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p {    
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.dich-vu
+{
+	position: relative;
+	overflow: hidden
+}
+.dich-vu img {transition: all 0.5s}
+.dich-vu:hover> img {transform: scale(1.5)}
+
+*{ box-sizing: border-box}
+.row{ display: flex; flex-wrap: wrap}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]
+{
+	padding: 15px;
+	border: none 
+}
+.container{ width: 100%}
+
+.top-bar i{ margin-left: 5px; margin-right: 2px}
+.img-100{ width: 100%; height: auto}
+.text-center { text-align: center}
+.text-right{ text-align: right}
+
+/*--------- style cho ipad---tablet-------*/
+@media (min-width:768px)
+{
+	.col-md-1 {width: 8.33%;}
+	.col-md-2 {width: 16.66%;}
+	.col-md-3 {width: 25%;}
+	.col-md-4 {width: 33.33%;}
+	.col-md-5 {width: 41.66%;}
+	.col-md-6 {width: 50%;}
+	.col-md-7 {width: 58.33%;}
+	.col-md-8 {width: 66.66%;}
+	.col-md-9 {width: 75%;}
+	.col-md-10 {width: 83.33%;}
+	.col-md-11 {width: 91.66%;}
+	.col-md-12 {width: 100%;}
+}
+.container{ width: 90%; margin: auto}
+
+/*--------- style cho pc 1000 tro len-------*/
+@media (min-width:1000px)
+{
+
+	.col-lg-1 {width: 8.33%;}
+	.col-lg-2 {width: 16.66%;}
+	.col-lg-3 {width: 25%;}
+	.col-lg-4 {width: 33.33%;}
+	.col-lg-5 {width: 41.66%;}
+	.col-lg-6 {width: 50%;}
+	.col-lg-7 {width: 58.33%;}
+	.col-lg-8 {width: 66.66%;}
+	.col-lg-9 {width: 75%;}
+	.col-lg-10 {width: 83.33%;}
+	.col-lg-11 {width: 91.66%;}
+	.col-lg-12 {width: 100%;}
+	.container{ width: 80%; margin: auto}
+		
+}
+
+.navbar 
+{
+	position: relative;
+	
+}
+.navbar .btn-menu
+{ 
+	position: absolute;
+	right:0;
+	top: 20px;
+	cursor: pointer;
+	border: 1px solid tomato
+}
+ul.menu
+{ 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none
+}
+ul.menu li
+{
+	position: relative
+}
+ul.menu li a
+{
+	text-decoration: none; 
+	padding: 10px;
+	display: block;
+	color: white
+}
+ul.menu li a:hover{
+	background: #393838;
+	color: tomato
+}
+@media (min-width:1000px)
+{
+	ul.menu { display: flex; justify-content: space-between; width: 70%; align-items: center}
+	.navbar{ 
+		display: flex;
+		justify-content: space-between;
+		align-items: center
+	}
+	.btn-menu{ display: none}
+	ul.menu li a
+{
+
+	border-bottom:none;
+
+}
+.banner { position: relative;
+               overflow: hidden}
+.banner-caption
+{
+	position: absolute;
+	top: 20%;
+	left: 15%; color: #fff;
+	width: 50%;
+	text-align:left;
+}	
+.banner-caption h1{ 
+	font-size: 3vw;
+	line-height: 0.9;
+   background:#211E1F;
+}
+.banner-caption h2{ 
+	font-size: 2vw;
+}
+.bannergt{ position: relative;
+               overflow: hidden}
+.bannergt img{height: 550px}
+.bannergt-caption
+{
+	position: absolute;
+	top: 5%;
+	left: 15%; color: #fff;
+	width: 60%;
+	text-align:left;
+}	
+.bannergt-caption h1{ 
+	font-size: 4vw;
+	line-height: 0.9;
+   background:none;
+}
+.dulich
+{
+	position: relative;
+	overflow: hidden;
+
+}
+.dulich-caption
+{
+	position: absolute;
+	top: 0%; left: 0%;
+	padding: 8%; padding-top: 5%;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	color: white;
+	text-align:left;
+	transition: all 0.6s;
+	transform: scale(0);
+}
+.dulich:hover> .dulich-caption
+{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.dulich img {transition: all 0.6s}
+.dulich:hover> img {transform: scale(1.2)}
+.submit {
+	width: 200px;
+	padding: 10px 30px;
+	border-radius: 20px;
+	border: none
+}
+.submitbtn {
+	padding: 10px 20px;
+	border-radius: 20px;
+	background: tomato;
+	border: none
+}
+.submitbtn:hover{
+	background: #393838;
+	color: tomato
+}
+ul.footer-icon
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content:left;
+}
+
+ul.footer-icon li
+{
+	position: relative
+}
+
+ul.footer-icon li a
+{
+	text-decoration: none;
+	padding: 10px;
+	display: flex;
+	color:#EFEEEE;
+}
+
+ul.footer-icon li a:hover
+{
+	color: tomato;
+}
+.text
+{
+	color:#222121
+}
+.text:hover
+{
+	color:tomato
+}
+.footer-text
+{
+	color: #DDDDDD;
+}
+.footer-text:hover
+{
+	color:tomato
+}
+@media (max-width:768px)
+{
+	.banner .img-100
+	{
+		height: 80vh;
+		width: 175vw
+	}
+	.banner-caption	{
+		top: 10%;
+		 left: 40%
+	}
+	.banner-caption h1{ 
+		font-size:10vw;
+		line-height: 1 }
+	.banner-caption p{ display: none}
+}
+/*-- thu vien mau text---*/
+.text-white{ color: white}
+.text-light{ color: #DDDDDD}
+.text-primary{ color:#222121 }
+.text-secondary{ color: tomato}
+.text-dark{ color: #2F2F2F}
+/* thu vien mau nen*/
+.bg-light{ background-color: tomato}
+.bg-white{ background-color:white; padding: 10px}
+.bg-primary{ background-color:#F2F0F5}
+.bg-dark{ background-color: #201F1F}
+/*-- thu vien button---*/
+.btn-primary
+{;
+	color: #333;
+	padding: 10px;
+	text-decoration: none;
+	transition: all 0.5s;
+	border-radius: 5px;
+	background-color: tomato
+	
+}
+.btn-primary:hover{
+	background-color: tomato;
+ 	color: #fff
+}
+
